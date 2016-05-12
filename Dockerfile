@@ -13,7 +13,7 @@ ENV CATALINA_TMPDIR /tmp/tomcat7-tomcat7-tmp
 
 RUN mkdir -p $CATALINA_TMPDIR
 
-VOLUME["/var/lib/tomcat8/webapps/"]
+VOLUME ["/var/lib/tomcat8/webapps/"]
 
 EXPOSE 8080 9000
 
