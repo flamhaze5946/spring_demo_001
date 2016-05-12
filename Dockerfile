@@ -1,4 +1,3 @@
 FROM tomcat:8
-RUN mkdir /usr/local/tomcat/webapps/mine
-VOLUME ["/usr/local/tomcat/webapps/mine"]
+ADD target/SpringWebDemo003 /usr/local/tomcat/webapps/
 CMD ["catalina.sh", "run"]
