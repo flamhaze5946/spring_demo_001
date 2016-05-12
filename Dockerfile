@@ -17,4 +17,4 @@ VOLUME ["/var/lib/tomcat8/webapps/"]
 
 EXPOSE 8080 9000
 
-ENTRYPOINT["/usr/share/tomcat8/bin/catalina.sh", "run"]
+ENTRYPOINT ["/usr/share/tomcat8/bin/catalina.sh", "run"]
