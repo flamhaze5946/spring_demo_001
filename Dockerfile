@@ -1,3 +1,4 @@
 FROM tomcat:8
-VOLUME ["/usr/local/tomcat/webapps"]
+RUN mkdir /usr/local/tomcat/webapps/mine
+VOLUME ["/usr/local/tomcat/webapps/mine"]
 CMD ["catalina.sh", "run"]
